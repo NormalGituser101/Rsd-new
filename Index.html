@@ -395,41 +395,6 @@
 <footer>
     &copy; 2023 Rani Shantala Devi Women Empowerment Trust®. All Rights Reserved.
 </footer>
-
-<script>
-    // Handle donation form submission - simulation for demo
-    function handleDonate(event) {
-        event.preventDefault();
-        const amountInput = document.getElementById('amount');
-        const message = document.getElementById('donationMessage');
-        if(amountInput.value && amountInput.value > 0){
-            message.style.color = 'green';
-            message.textContent = `Thank you for your generous donation of INR ${amountInput.value}!`;
-            amountInput.value = '';
-        } else {
-            message.style.color = 'red';
-            message.textContent = 'Please enter a valid donation amount.';
-        }
-        return false;
-    }
-
-    // Handle contact form submission - simulation for demo
-    function handleContact(event) {
-        event.preventDefault();
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const messageText = document.getElementById('message').value.trim();
-        const messageElem = document.getElementById('contactMessage');
-
-        if(name && email && messageText){
-            messageElem.style.color = 'green';
-            messageElem.textContent = `Thank you, ${name}, for reaching out! We will get back to you soon.`;
-            document.getElementById('contactForm').reset();
-        } else {
-            messageElem.style.color = 'red';
-            messageElem.textContent = 'Please fill in all fields.';
-        }
-        return false;
     }
 </script>
 
